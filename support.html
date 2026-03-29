@@ -1,30 +1,95 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr"> 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destek - Meyra</title>
-    <style>
-        body { background-color: #0F172A; color: #F8FAFC; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; margin: 0; min-height: 100vh; box-sizing: border-box; }
-        .card { background-color: #1E293B; border-radius: 20px; padding: 50px 40px; width: 100%; max-width: 500px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
-        h1 { color: #D4AF37; font-size: 2rem; margin-top: 0; margin-bottom: 20px; }
-        p { color: #CBD5E1; font-size: 1.1rem; line-height: 1.6; margin-bottom: 40px; }
-        .btn { display: inline-block; background-color: #D4AF37; color: #0F172A; padding: 14px 32px; border-radius: 9999px; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: 0.2s; }
-        .btn:hover { opacity: 0.9; transform: translateY(-2px); }
-        .btn-back { display: block; margin-top: 30px; color: #64748B; text-decoration: none; font-size: 1rem; transition: 0.2s; }
-        .btn-back:hover { color: #D4AF37; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meyra Destek</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #06162b;
+      color: white;
+      padding: 50px 20px;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 42px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.06);
+      border-radius: 18px;
+      padding: 28px;
+      margin-top: 20px;
+    }
+
+    h2 {
+      color: #d4b13f;
+    }
+
+    p {
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+    }
+
+    a {
+      color: #d4b13f;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: rgba(255,255,255,0.45);
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Meyra Destek</h1>
 
     <div class="card">
-        <h1>Destek / Support</h1>
-        <p>Meyra uygulamasıyla ilgili soru, görüş, öneri veya karşılaştığınız teknik sorunlar için bizimle iletişime geçebilirsiniz. Size en kısa sürede dönüş yapacağız.</p>
-        
-        <a href="mailto:omerozkan1@gmail.com?subject=Meyra App Support" class="btn">Bize Ulaşın</a>
-
-        <a href="index.html" class="btn-back">&larr; Ana Sayfaya Dön</a>
+      <h2>İletişim</h2>
+      <p>
+        Uygulama ile ilgili teknik destek, öneri veya geri bildirim için bize ulaşabilirsiniz:
+      </p>
+      <p>
+        📩 <a href="mailto:meyraapp@gmail.com">meyraapp@gmail.com</a>
+      </p>
     </div>
 
+    <div class="card">
+      <h2>Destek Konuları</h2>
+      <p>
+        Yardım alabileceğiniz başlıca konular:
+      </p>
+      <p>
+        • Premium üyelik sorunları<br>
+        • Bildirim ayarları<br>
+        • Namaz vakti ve şehir eşleşmesi<br>
+        • AI asistan kullanımı<br>
+        • Teknik hata bildirimleri
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Yanıt Süresi</h2>
+      <p>
+        Talepler genellikle 24-48 saat içinde yanıtlanır.
+      </p>
+    </div>
+
+    <footer>
+      © 2026 Meyra
+    </footer>
+  </div>
 </body>
 </html>
