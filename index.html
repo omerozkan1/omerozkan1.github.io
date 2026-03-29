@@ -1,101 +1,77 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head> 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meyra</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #06162b;
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 20px;
-      color: rgba(255,255,255,0.75);
-      line-height: 1.7;
-    }
-
-    .buttons {
-      margin-top: 40px;
-    }
-
-    a {
-      display: inline-block;
-      margin: 10px;
-      padding: 14px 26px;
-      border-radius: 14px;
-      background: #d4b13f;
-      color: #06162b;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .card {
-      margin-top: 50px;
-      background: rgba(255,255,255,0.06);
-      border-radius: 18px;
-      padding: 28px;
-    }
-
-    h2 {
-      color: #d4b13f;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      line-height: 2;
-      color: rgba(255,255,255,0.8);
-    }
-
-    footer {
-      margin-top: 50px;
-      color: rgba(255,255,255,0.45);
-    }
-  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meyra</title>
+    <style>
+        body {
+            background-color: #0F172A; /* Koyu Lacivert Arka Plan */
+            color: #F8FAFC;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px;
+            margin: 0;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        h1 { font-size: 3.5rem; margin-bottom: 15px; font-weight: 700; }
+        .subtitle { font-size: 1.2rem; color: #CBD5E1; margin-bottom: 40px; text-align: center; max-width: 700px; line-height: 1.5; }
+        .button-group { display: flex; gap: 20px; margin-bottom: 50px; flex-wrap: wrap; justify-content: center; }
+        .btn {
+            background-color: #D4AF37; /* Gold Buton */
+            color: #0F172A;
+            padding: 14px 32px;
+            border-radius: 9999px; /* Tam Yuvarlak Kenar */
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+        .btn:hover { opacity: 0.9; transform: translateY(-2px); }
+        .card {
+            background-color: #1E293B; /* Kart Arka Planı */
+            border-radius: 20px;
+            padding: 40px;
+            width: 100%;
+            max-width: 700px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .card h2 { color: #D4AF37; font-size: 1.6rem; margin-bottom: 25px; font-weight: 600; margin-top: 0; }
+        .feature-list { list-style: none; padding: 0; margin: 0; color: #E2E8F0; line-height: 2.2; font-size: 1.1rem; }
+        .footer { margin-top: 60px; color: #64748B; font-size: 0.95rem; }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Meyra</h1>
-    <p>
-      Namaz vakitleri, kıble, dualar, Kur'an-ı Kerim, yakın camiler ve yapay zeka destekli manevi asistan.
-    </p>
 
-    <div class="buttons">
-      <a href="privacy.html">Gizlilik Politikası</a>
-      <a href="support.html">Destek</a>
+    <h1>Meyra</h1>
+    <div class="subtitle">Namaz vakitleri, kıble, dualar, Kur'an-ı Kerim, yakın camiler ve yapay zeka destekli manevi asistan.</div>
+
+    <div class="button-group">
+        <a href="privacy.html" class="btn">Gizlilik Politikası</a>
+        <a href="support.html" class="btn">Destek</a>
     </div>
 
     <div class="card">
-      <h2>Öne Çıkan Özellikler</h2>
-      <ul>
-        <li>Namaz vakitleri ve ezan bildirimleri</li>
-        <li>Kıble yönü bulma</li>
-        <li>Yakındaki camileri keşfetme</li>
-        <li>Kur'an-ı Kerim ve dualar</li>
-        <li>AI destekli dini danışman</li>
-        <li>Premium manevi içerikler</li>
-      </ul>
+        <h2>Öne Çıkan Özellikler</h2>
+        <ul class="feature-list">
+            <li>Ana ekran widget'ları ile anlık vakit takibi (Yeni)</li>
+            <li>Ses tanıma (mikrofon) destekli akıllı zikirmatik (Yeni)</li>
+            <li>Sesli Kur'an-ı Kerim sureleri ve dualar dinleme (Yeni)</li>
+            <li>Ayet, dua ve içerikler için zengin paylaşım seçenekleri (Yeni)</li>
+            <li>Türkçe, İngilizce ve Arapça çoklu dil desteği (Yeni)</li>
+            <li>Namaz vakitleri ve ezan bildirimleri</li>
+            <li>Kıble yönü bulma ve yakındaki camileri keşfetme</li>
+            <li>AI destekli dini danışman ve premium manevi içerikler</li>
+        </ul>
     </div>
 
-    <footer>
-      © 2026 Meyra
-    </footer>
-  </div>
+    <div class="footer">
+        &copy; 2026 Meyra
+    </div>
+
 </body>
 </html>
