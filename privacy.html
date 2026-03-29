@@ -1,226 +1,44 @@
 <!DOCTYPE html>
-<html lang="tr">
-<head> 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meyra Gizlilik Politikası</title>
-  <style>
-    :root {
-      --bg: #06162b;
-      --card: rgba(255,255,255,0.06);
-      --border: rgba(255,255,255,0.08);
-      --text: #ffffff;
-      --muted: rgba(255,255,255,0.72);
-      --accent: #d4b13f;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      padding: 32px 20px 48px;
-    }
-
-    .container {
-      max-width: 920px;
-      margin: 0 auto;
-    }
-
-    .hero {
-      text-align: center;
-      margin-bottom: 32px;
-    }
-
-    .hero h1 {
-      margin: 0 0 12px;
-      font-size: 40px;
-      line-height: 1.15;
-    }
-
-    .hero p {
-      margin: 0;
-      color: var(--accent);
-      font-size: 18px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 24px;
-      margin-bottom: 18px;
-    }
-
-    h2 {
-      margin-top: 0;
-      color: var(--accent);
-      font-size: 24px;
-    }
-
-    h3 {
-      margin-bottom: 8px;
-      font-size: 18px;
-    }
-
-    p, li {
-      color: var(--muted);
-      font-size: 16px;
-    }
-
-    ul {
-      padding-left: 20px;
-      margin-top: 8px;
-      margin-bottom: 0;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .small {
-      font-size: 14px;
-      color: rgba(255,255,255,0.55);
-    }
-
-    footer {
-      margin-top: 24px;
-      text-align: center;
-      color: rgba(255,255,255,0.55);
-      font-size: 14px;
-    }
-  </style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Meyra</title>
+    <style>
+        body { background-color: #0F172A; color: #F8FAFC; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; margin: 0; min-height: 100vh; box-sizing: border-box; }
+        .card { background-color: #1E293B; border-radius: 20px; padding: 40px; width: 100%; max-width: 800px; text-align: left; line-height: 1.7; box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+        h1 { color: #D4AF37; font-size: 2rem; margin-top: 0; text-align: center; border-bottom: 1px solid #334155; padding-bottom: 20px; }
+        h2 { color: #F8FAFC; font-size: 1.3rem; margin-top: 30px; }
+        p, li { color: #CBD5E1; font-size: 1.05rem; }
+        .lang-title { color: #D4AF37; font-weight: bold; margin-top: 40px; border-top: 1px dashed #334155; padding-top: 30px; text-align: center; font-size: 1.5rem; }
+        .btn-back { display: inline-block; background-color: transparent; color: #D4AF37; border: 2px solid #D4AF37; padding: 10px 24px; border-radius: 9999px; text-decoration: none; font-weight: 700; margin-bottom: 30px; transition: 0.2s; }
+        .btn-back:hover { background-color: #D4AF37; color: #0F172A; }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <section class="hero">
-      <h1>Meyra Gizlilik Politikası</h1>
-      <p>Namaz, Dua ve Kıble uygulaması için gizlilik açıklaması</p>
-    </section>
 
-    <section class="card">
-      <h2>Genel Bakış</h2>
-      <p>
-        Meyra, namaz vakitleri, kıble, Kur'an-ı Kerim, dualar, yakın camiler ve yapay zeka destekli manevi asistan
-        özelliklerini sunmak için bazı verileri işler. Kullanıcı gizliliğini önemseriz ve yalnızca uygulamanın çalışması
-        için gerekli verileri kullanırız.
-      </p>
-    </section>
+    <a href="index.html" class="btn-back">&larr; Ana Sayfa / Home</a>
 
-    <section class="card">
-      <h2>Toplanan Veriler</h2>
+    <div class="card">
+        <h1>Privacy Policy</h1>
+        <p><em>Last updated: March 29, 2026</em></p>
+        <p>This Privacy Policy describes how Meyra ("we", "us", or "our") collects, uses, and discloses your information.</p>
 
-      <h3>1. Konum Verisi</h3>
-      <p>
-        Konum izni verirseniz, bulunduğunuz ilçe ve şehre göre namaz vakitlerini göstermek ve size en yakın camileri
-        bulmak için konum veriniz kullanılabilir.
-      </p>
+        <h2>1. Microphone and Speech Recognition</h2>
+        <p>Meyra uses your device's microphone and Apple's Speech Recognition service strictly for the "Voice Tasbih" feature. <strong>We do not record, store, or transmit your voice data to our servers or any third parties.</strong> All speech recognition processing happens locally on your device in real-time solely to count your dhikr.</p>
 
-      <h3>2. Bildirim Tercihleri</h3>
-      <p>
-        Namaz vakti, vakit öncesi hatırlatıcı ve diğer isteğe bağlı bildirim ayarlarınız cihazınızda saklanabilir.
-      </p>
+        <h2>2. Location Data</h2>
+        <p>We request access to your location to calculate accurate prayer times, send location-based notifications, and determine the Qibla direction. This data is processed locally. We do not track your movements or sell your location data.</p>
 
-      <h3>3. Yapay Zeka Asistanı Kullanımı</h3>
-      <p>
-        Meyra Akıllı Asistan'a yazdığınız sorular, size yanıt üretilebilmesi amacıyla ilgili yapay zeka hizmetine
-        gönderilebilir. Bu içerikler hizmet kalitesini sağlamak, yanıt üretmek ve teknik sorunları analiz etmek amacıyla
-        işlenebilir.
-      </p>
 
-      <h3>4. Abonelik ve Satın Alma Bilgileri</h3>
-      <p>
-        Premium üyelik ve uygulama içi satın alma işlemleri Apple tarafından yönetilir. Meyra, premium erişiminizin
-        aktif olup olmadığını belirlemek için gerekli abonelik durumunu kontrol edebilir.
-      </p>
+        <div class="lang-title">Gizlilik Politikası (Türkçe)</div>
+        
+        <h2>1. Mikrofon ve Ses Tanıma</h2>
+        <p>Meyra, cihazınızın mikrofonunu ve Ses Tanıma özelliğini yalnızca "Sesli Zikirmatik" özelliği için kullanır. <strong>Ses verileriniz asla kaydedilmez, sunucularımıza gönderilmez veya üçüncü şahıslarla paylaşılmaz.</strong> Tüm ses işleme işlemleri, cihazınızda anlık olarak gerçekleşir.</p>
 
-      <h3>5. Analitik ve Hata Kayıtları</h3>
-      <p>
-        Uygulama performansını iyileştirmek, çökme sorunlarını tespit etmek ve temel kullanım istatistiklerini anlamak
-        için analitik ve tanılama servisleri kullanılabilir.
-      </p>
-    </section>
+        <h2>2. Konum Verileri</h2>
+        <p>En hassas namaz vakitlerini hesaplamak, ezan bildirimlerini göndermek ve Kıble yönünü bulmak için konum izninize ihtiyaç duyarız. Konum verileriniz cihaz içinde işlenir, takip edilmez veya satılmaz.</p>
+    </div>
 
-    <section class="card">
-      <h2>Veriler Nasıl Kullanılır?</h2>
-      <ul>
-        <li>Namaz vakitlerini ve konuma uygun dini bilgileri göstermek</li>
-        <li>Kıble ve yakın camiler özelliklerini çalıştırmak</li>
-        <li>Bildirimleri planlamak ve yönetmek</li>
-        <li>Yapay zeka asistanı ile yanıt üretmek</li>
-        <li>Premium erişimi doğrulamak</li>
-        <li>Uygulama performansını ve kararlılığını iyileştirmek</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Üçüncü Taraf Hizmetler</h2>
-      <p>Meyra aşağıdaki türde üçüncü taraf hizmetleri kullanabilir:</p>
-      <ul>
-        <li>Apple In-App Purchases</li>
-        <li>Firebase Analytics</li>
-        <li>Firebase Crashlytics</li>
-        <li>Firebase AI Logic</li>
-        <li>Google AdMob</li>
-      </ul>
-      <p>
-        Bu hizmetler kendi gizlilik politikalarına göre veri işleyebilir. Bu hizmetlerin kullanımı, uygulamanın temel
-        işlevlerini ve ölçümleme ihtiyaçlarını desteklemek içindir.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Reklamlar</h2>
-      <p>
-        Meyra ücretsiz sürümde reklam gösterebilir. Premium kullanıcılar reklamsız deneyimden faydalanabilir.
-        Uygulama, reklam hizmetleri için üçüncü taraf reklam sağlayıcıları kullanabilir.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Çocukların Gizliliği</h2>
-      <p>
-        Meyra genel kullanıcı kitlesine yönelik bir uygulamadır. Ebeveynlerin veya yasal temsilcilerin gözetimi olmadan
-        bilinçli olarak çocuklardan kişisel veri toplama amacı taşımaz.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Veri Saklama</h2>
-      <p>
-        Bazı tercihler ve uygulama ayarları cihazınızda saklanabilir. Analitik ve tanılama verileri, ilgili servis
-        sağlayıcıların standart saklama politikalarına göre işlenebilir.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Haklarınız ve İletişim</h2>
-      <p>
-        Gizlilik politikasıyla ilgili sorularınız için bizimle iletişime geçebilirsiniz:
-      </p>
-      <p>
-        E-posta:
-        <a href="mailto:meyraapp@gmail.com">meyraapp@gmail.com</a>
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Politika Güncellemeleri</h2>
-      <p>
-        Bu gizlilik politikası zaman zaman güncellenebilir. Güncel sürüm her zaman bu sayfada yayınlanır.
-      </p>
-      <p class="small">Son güncelleme: 17 Mart 2026</p>
-    </section>
-
-    <footer>
-      © 2026 Meyra. Tüm hakları saklıdır.
-    </footer>
-  </div>
 </body>
 </html>
